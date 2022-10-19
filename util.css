@@ -1,0 +1,138 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F9F9F9;
+    --green:#44b267;
+    --red:#e81c4e;
+    --yellow:#f9cd90;
+    --dYellow:#ab7002;
+    --Dgreen:darkgreen;
+    --Lred:#f07d7d;
+    --Dred:#8d0808;
+}
+
+/* body{
+    background-color: red;
+} */
+
+.flex{
+    display: flex;
+}
+
+.dark{
+    --primary:var(--dark);
+    --dark:var(--pure);
+    --pure:var(--ternary);
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-right{
+    justify-content: right;
+}
+
+.justify-arround{
+    justify-content: space-around;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.p-sm{
+    padding:1.25rem;
+}
+.px-xs{
+    padding:0 .5rem;
+}
+.py-lg{
+    padding:2rem 0;
+}
+.px-lg{
+    padding:0 2rem ;
+}
+.py-xs{
+    padding:.5rem 0;
+}
+
+.ml-sm{
+    margin-left: .8rem;
+}
+.ml-xl{
+    margin-left: 1.8rem;
+}
+
+.ml-4xl{
+    margin-left: 8rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: .5em 2em;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    /* font-size: 1.5em; */
+    border: 2px solid transparent;
+}
+
+
+.btn-primary{
+    color: var(--pure);
+    background: var(--red);
+    text-transform: uppercase;
+}
+
+.btn-primary:hover{
+    color: var(--red);
+    background: transparent;
+    border-color: var(--red);
+}
+
+.btn-secondary{
+    color: var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover{
+    color: var(--dark);
+    background: var(--primary);
+    /* text-transform: uppercase; */
+}
+
+.font-lg{
+    font-size: 2em;
+}
+.font-xl{
+    font-size: 4em;
+}
+
+p{
+    /* padding-bottom: .5rem; */
+    line-height:1.8;
+}
+
+h1{
+    line-height: 1.2;
+    padding-bottom: 1.2rem;
+    /* color: red; */
+}
+

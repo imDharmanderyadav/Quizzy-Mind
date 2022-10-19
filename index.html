@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <title>Quiz-App</title>
+</head>
+
+<body>
+    <!-- <button class="btn btn-primary">welcome to our quiz app</button> -->
+    <div class="container">
+        <section id="home" class="center">
+            <h2 class="center">Take the Quiz to Enhance the knowledge</h2>
+            <button class="btn btn-primary" id="start" onclick="Start">Let's Start</button>
+        </section>
+
+        <section id="quiz-container">
+            <p class="question-wrapper"><span id="qNum">1.</span>
+                <span id="question"></span>
+            </p>
+            <div id="option-wrapper">
+                <div class="option" id="op1">Lacknow</div>
+                <div class="option" id="op2">Mumbai</div>
+                <div class="option" id="op3">New Delhi</div>
+                <div class="option" id="op4">Gujrat</div>
+            </div>
+            <div class="buttons">
+                <!-- <button class="btn btn-primary" id="check" onclick="Check">Check</button> -->
+                <button class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </section>
+
+        <!--
+        <section id="alert">
+            <p>Please Select atleast One option</p>
+            <button id="ok">ok</button>
+        </section>
+         -->
+
+        <section id="result">
+            <h1>👑</h1>
+            <h4><strong>Congratulations</strong>
+                You Complete the Quiz
+            </h4>
+            <div>And You got <span id="obtain">2</span>Out of <span id="total">4</span></div>
+            <p id="msg"></p>
+            <div class="buttons">
+                <button class="btn btn-primary" id="quit">Quit</button>
+                <button class="btn btn-primary" id="replay">Replay</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 95vw;
+    min-height: 90vh;
+    background: var(--primary);
+    margin: 1rem auto;
+    border-radius: 13px;
+    /* padding: 1rem; */
+    text-align: center;
+    position: relative;
+    /* font-size: .3rem; */
+    box-shadow: 0 0 7px 0.1px;
+}
+
+.container section{
+    /* border: 2px solid red; */
+    min-width: 88vw;
+    /* font-size: 1rem; */
+    border-radius: 8px;
+}
+
+#quiz-container , #result{
+    display: none;
+}
+
+#home button , #quiz-container, #result{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#quiz-container p{
+    /* padding: 1rem; */
+    /* font-size: 1.6em; */
+    font-weight: 500;
+    
+}
+
+#quiz-container p #qNum{
+    padding:0 0.5em;
+}
+
+#option-wrapper{
+    /* background: var(--yellow); */
+    font-weight:500;
+    font-family:  'Arial Narrow Bold', sans-serif;
+}
+.option{
+    text-align: left;
+    padding:.3em;
+    margin: 0.5rem;
+    background: var(--light);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 0 2px 1px;
+}
+
+/* Result section */
+
+#result{
+    background: var(--light);
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: 0 0 4px 0.1px;
+}
+#result h1{
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+}
+#result h4 strong {
+    display: block;
+    font-size: 1.7em;
+}
+div h4{
+    font-size: .7em;
+}
+
+div span{
+    /* line-height: 0; */
+    padding: 0 4px;
+    font-weight: 900;
+}
+
+#msg{
+    font-size: .1rem;
+    font-weight: 900;
+}
+
+.buttons{
+    padding: 1rem 0;
+}
+
+/* Responsiveness  */
+@media (min-width:1900px){
+    .container{
+        width: 60vw;
+    }
+    .container section{
+        min-width: 45vw;
+        font-size: 3rem;
+    }
+    .option{
+        font-size: 2rem;
+    }
+
+    #submit{
+        padding: 1rem 12rem;
+        /* background: red; */
+    }
+
+    #result{
+        font-size: 5rem;
+    }
+
+}
+@media (min-width:1000px) {
+    .container{
+        width: 65vw;
+    }
+    .container section{
+        min-width: 45vw;
+        font-size: 1.3rem;
+    }
+
+    .option{
+        margin: 1rem 2rem;
+        padding: 0.5em 1.5em;
+        font-size: 1.3rem;
+    }
+
+    #submit{
+        padding: 0.8rem 8rem;
+        /* background: yellow; */
+    }
+
+    #result{
+        font-size: 2rem;
+    }
+}
+    
+@media (min-width:600px) {
+
+    .container{
+        width: 80vw;
+    }
+    .container section{
+        min-width: 60vw;
+        /* font-size: 1rem; */
+    }
+    #quiz-container p{
+        font-size: 1em;
+
+    }
+    /* #submit{
+        padding: 0.5rem 3rem;
+        /* background: yellow; 
+    } */
+}
